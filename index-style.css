@@ -56,7 +56,7 @@ button {
 main {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 4px;
     height: 90vh;
     margin: 30px 40px;
 }
@@ -64,13 +64,16 @@ main {
 /*------ main webcam ------*/
 .webcam {
     display: flex;
-    width: calc(100% / 6 - 8px);
-    height: calc(90vh / 6 - 8px);
+    width: calc(100% / 6 - 4px);
+    height: calc(90vh / 6 - 4px);
     background-image: url(https://static.fanpage.it/wp-content/uploads/sites/25/2022/01/Schermata-2022-01-19-alle-09.59.41.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
+}
+.webcam.online {
+    border: 1px solid lime;
 }
 
 /*------ main webcam tag ------*/
@@ -79,7 +82,7 @@ main {
     justify-content: flex-end;
     align-self: flex-end;
     margin: 3px;
-    font-size: 12px;
+    font-size: 0.9vw;
     padding: 2px 4px;
     border-radius: 5px;
     background-color: rgba(38, 38, 36, 0.6);
@@ -94,7 +97,59 @@ main {
     color: #b73830;
 }
 
+.webcam-tag.online i {
+    color: lightgreen;
+}
+
 /*------ footer ------*/
+footer {
+    display: flex;
+    background-color: #1b1b1b;
+}
+
+/*------ footer columns ------*/
+.f-left ,.f-center ,.f-right {
+    display: flex;
+}
+.f-left ,.f-right {
+    width: 20%;
+}
+.f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+/*------ footer columns commands ------*/
+.audiovideo ,.commands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.audiovideo div ,.commands div {
+    color: #a8a8a8;
+    font-size: 14px;
+}
+
+/*------ footer columns button ------*/
+.f-btn {
+    height: 35px;
+    width: 35px;
+    font-size: 24px;
+    color: #a8a8a8;
+    border: none;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+.f-btn.double {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
 
 
 
