@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #111111;
+}
 
 /*------ header ------*/
 header {
     display: flex;
     padding: 0 10px;
-    background-color: aqua;
 }
 .header-left ,.header-right {
     display: flex;
@@ -49,4 +51,48 @@ button {
 .visual > * {
     padding: 0 10px;
 }
+
+/*------ main ------*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    height: 90vh;
+    margin: 30px 40px;
+}
+
+/*------ main webcam ------*/
+.webcam {
+    display: flex;
+    width: calc(100% / 6 - 8px);
+    height: calc(90vh / 6 - 8px);
+    background-image: url(https://picsum.photos/400/200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/*------ main webcam tag ------*/
+.webcam-tag {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 5px;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 5px;
+    background-color: rgba(38, 38, 36, 0.6);
+}
+.webcam-tag > * {
+    padding-right: 5px;
+}
+.webcam-tag span {
+    color: #fff;
+}
+.webcam-tag i {
+    color: #b73830;
+}
+
+
 
