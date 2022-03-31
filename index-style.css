@@ -66,7 +66,7 @@ main {
     display: flex;
     width: calc(100% / 6 - 8px);
     height: calc(90vh / 6 - 8px);
-    background-image: url(https://picsum.photos/400/200);
+    background-image: url(https://static.fanpage.it/wp-content/uploads/sites/25/2022/01/Schermata-2022-01-19-alle-09.59.41.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ main {
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
-    margin: 5px;
+    margin: 3px;
     font-size: 12px;
     padding: 2px 4px;
     border-radius: 5px;
@@ -93,6 +93,8 @@ main {
 .webcam-tag i {
     color: #b73830;
 }
+
+/*------ footer ------*/
 
 
 
