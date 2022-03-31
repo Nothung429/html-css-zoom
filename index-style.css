@@ -31,7 +31,7 @@ button {
     margin-right: 10px;
     padding: 3px;
     font-size: 16px;
-    border: 1px transparent;
+    border: none;
     border-radius: 5px;
     background-color: #0a0b0b;
     display: flex;
@@ -117,16 +117,13 @@ footer {
     width: 20%;
 }
 .f-center {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 60%;
 }
 .f-right {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 /*------ footer columns commands ------*/
@@ -157,6 +154,14 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0 10px;
+}
+.f-right button {
+    color: #fff;
+    font-weight: 700;
+    background-color: #b73830;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
 }
 
 /*------ footer active ------*/
