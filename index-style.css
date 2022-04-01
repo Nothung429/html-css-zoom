@@ -12,7 +12,7 @@ body {
 /*------ header ------*/
 header {
     display: flex;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .header-left ,.header-right {
     display: flex;
@@ -28,7 +28,6 @@ button {
     cursor: pointer;
 }
 .security ,.record ,.visual {
-    margin-right: 10px;
     padding: 3px;
     font-size: 16px;
     border: none;
@@ -41,6 +40,7 @@ button {
 
 /*------ header button color------*/
 .security {
+    margin-right: 10px;
     color: #67d669;
 }
 .record ,.visual {
@@ -105,54 +105,38 @@ main {
 /*------ footer ------*/
 footer {
     display: flex;
+    align-items: center;
+    height: 60px;
     background-color: #1b1b1b;
-    padding: 0 15px;
+    padding-right: 10px;
 }
 
 /*------ footer columns ------*/
-.f-left ,.f-center ,.f-right {
-    display: flex;
-}
 .f-left ,.f-right {
     width: 20%;
 }
 .f-center {
-    justify-content: center;
-    align-items: center;
     width: 60%;
+    text-align: center;
 }
 .f-right {
-    justify-content: flex-end;
-    align-items: center;
-}
-
-/*------ footer columns commands ------*/
-.audiovideo ,.commands {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-}
-.audiovideo div ,.commands div {
-    color: #a8a8a8;
-    font-size: 14px;
+    text-align: right;
 }
 
 /*------ footer columns button ------*/
 .f-btn {
-    height: 35px;
-    width: 35px;
-    font-size: 24px;
+    min-width: 60px;
+    margin: 0 2px;
     color: #a8a8a8;
     border: none;
     background-color: #1b1b1b;
     text-align: center;
+    position: relative;
+}
+.f-btn i {
+    font-size: 20px;
 }
 .f-btn.double {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 0 10px;
 }
 .f-right button {
@@ -168,6 +152,17 @@ footer {
 .f-btn.active ,#active {
     color: #67d669;
 }
+
+.f-btn.av::before ,.f-btn.active::before {
+    content: "\f077";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
 
 
 
